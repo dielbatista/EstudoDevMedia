@@ -1,60 +1,97 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
     font-family: sans-serif;
 }
 
-.topo-banner {
+.topo {
+    width: 100%;
+    padding: 120px 80px;
+    height: auto;
+    background-image: url("../assets/img/banner-topo.jpg");
+    background-size: cover;
+}
+
+.secao-banner {
+    max-width: 250px;
+    color: #3C184E;
+}
+
+.secao-banner span {
+    font-size: 35px;
+    margin: 5px;
+}
+
+.secao-banner img {
+    width: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.texto2 {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+}
+
+.secao-conteudo-banner {
     max-width: 1024px;
-    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 70px 0 0 auto;
+    background-color: #ffffffc4;
+    box-shadow: 0 8px 32px #1f26875e;
 }
 
-.topo-banner p {
-    flex-wrap: wrap;
-    color: #3c184e;
+.secao-conteudo-banner h1 {
+    font-size: 60px;
+    color: #3C184E;
+    text-align: center;
+    font-weight: 800;
+    margin: 0 0 0 40px;
 }
 
-.topo-banner span {
-    justify-content: center;
-    align-items: center;
-    font-size: 28px;
-    font-weight: 200;
-    color: #3c184e;
-
+.secao-conteudo-banner p {
+    max-width: 200px;
+    padding: 10px 25px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #3C184E;
+    font-size: 20px;
+    text-align: center;
 }
 
-.topo-banner img {
-    width: 28px;
-    height: 26px;
-}
-
-.conteudo-banner {
-    color: #3c184e;
-    max-width: 1024px;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.conteudo-banner h1 {
-    color: #3c184e;
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.conteudo-banner a {
+.secao-conteudo-banner a {
     text-decoration: none;
-    background-color: #3c184e;
-    border: 2px solid #3c184e;
-    border-radius: 4px;
     color: #fff;
-    font-weight: bold;
-    padding: 14px;
-    font-size: 18px;
+    margin: 0 auto;
+    padding: 0 0 4px 0;
 }
 
-.conteudo-banner img {
-    width: 18px;
+.secao-conteudo-banner img {
+    width: 20px;
+}
+
+.conteudo {
+    width: 100%;
+    height: auto;
+    padding: 120px 80px;
+}
+
+.conteudo h3 {
+    color: #3C184E;
+    font-size: 32px;
+    text-align: center;
+    margin: 0 0 45px 0;
+}
+
+.service-list {
+    max-width: 800px;
+    color: #3C184E;
+    font-size: 20px;
+    margin: 0 0 50px 0;
+}
+
+.service-list span {
+    font-weight: bold;
 }
