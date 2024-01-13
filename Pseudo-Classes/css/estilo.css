@@ -17,6 +17,8 @@
 }
 
 .conteudo {
+    width: 100%;
+    box-sizing: border-box;
     padding-left: 15px;
 }
 
@@ -47,5 +49,10 @@ h2 {
 
 .conteudo a:visited {
     text-decoration: underline;
-    color: rgb(red, green, rgb(93, 203, 183)) ;
+    color: rgb(red, green, rgb(93, 203, 183));
+}
+
+.imagem-jogos tres-imagens {
+    box-sizing: border-box;
+    width: calc((100% -9px)/3);
 }
