@@ -75,13 +75,13 @@ thead {
 th,
 td {
     padding: 6px;
-    color: #000;
+    color: #fff;
 }
 
 tbody tr:nth-of-type(odd) {
     background: #5700cb;
 }
 
-tbody tr:nth-last-of-type(even) {
+tbody tr:nth-of-type(even) {
     background: #9154e3;
 }
