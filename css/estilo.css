@@ -112,6 +112,18 @@
     margin-bottom: 10px;
 }
 
+#quarto-solteiro:hover {
+    background: #00836a;
+}
+
+#quarto-familia:hover {
+    background: #00836a;
+}
+
+#quarto-casal:hover {
+    background: #00836a;
+}
+
 .quarto a {
     font-size: 28px;
     text-decoration: none;

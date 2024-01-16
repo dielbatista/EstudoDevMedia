@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img:first-child {
+    width: 100%;
+}
+
+header,
+footer {
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background-color: #ed5a0e;
+    color: #fff;
+    padding: 10px;
+}
+
+.titulo-logo {
+    margin: 0 10px;
+}
+
+.logo-destaque {
+    font-weight: bold;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.limita-area {
+    max-width: 1024px;
+}
+
+img {
+    width: 350px;
+}
+
+img:first-child {
+    width: 100%;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 25px;
+}
+
+p {
+    line-height: 32px;
+}
+
+p:last-child {
+    display: inline;
+    background: #f88143;
+    padding: 10px 5px;
+}
+
+.mais-informacoes {
+    display: block;
+    margin: 25px 0;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 5px solid #ed5a0e;
+    border-radius: 2px;
+}
+
+.jogos-avaliados {
+    width: 100%;
+    display: flex;
+    margin: 25px 0px;
+    overflow-x: scroll;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
+}
+
+figure:hover {
+    background: #f88143;
+}
+
+figcaption,
+figure span {
+    font-weight: bold;
+    color: #fff;
+    margin: 12px 0;
+    padding: 15px 0;
+    text-align: center;
+    background: #ed5a0e;
+    border-radius: 12px;
+}
