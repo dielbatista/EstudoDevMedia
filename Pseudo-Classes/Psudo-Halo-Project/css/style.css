@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5700cb;
+    color: #fff;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+}
