@@ -15,15 +15,73 @@ footer {
     color: #fff;
 }
 
+.logo {
+    width: 90px;
+}
+
+.logo-destaque {
+    font-weight: bold;
+}
+
 body {
     font-family: sans-serif;
+}
+
+h1,
+h2 {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 25px;
 }
 
 main {
     width: 100%;
 }
 
+p {
+    line-height: 32px;
+}
+
+.quem-somos p:last-of-type {
+    background: #9154e3;
+    display: inline;
+    padding: 10px 5px;
+}
+
 section {
     width: 100%;
     margin: 0 auto;
+}
+
+.banner {
+    width: 100%;
+}
+
+.limita-area {
+    max-width: 1024px;
+}
+
+table {
+    width: 100%;
+    margin: 25px 0;
+    background-color: #dfdfdf;
+}
+
+thead {
+    background: #5a5a5a;
+}
+
+th,
+td {
+    padding: 6px;
+    color: #000;
+}
+
+tbody tr:nth-of-type(odd) {
+    background: #5700cb;
+}
+
+tbody tr:nth-last-of-type(even) {
+    background: #9154e3;
 }
