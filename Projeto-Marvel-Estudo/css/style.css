@@ -10,8 +10,7 @@ body {
     font-family: sans-serif;
 }
 
-.topo,
-footer {
+.topo {
     color: #fff;
     width: 100%;
     height: 45px;
@@ -52,7 +51,9 @@ figure {
 }
 
 .img-tamanho {
+    display: flex;
     width: 400px;
+    flex-wrap: wrap;
 }
 
 figure::after {
@@ -64,7 +65,11 @@ figure::after {
     background: red;
     margin: 10px 0;
     padding: 10px 0;
-    width: 400px;
+    width: 100%;
+}
+
+.secao-info p {
+    line-height: 32px;
 }
 
 li,
@@ -79,4 +84,13 @@ a::before {
     height: 20px;
     background-image: url("https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/img/link.png");
     margin: 0 6px 0 0;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: red;
+    color: #fff;
+    margin: 50px 0;
+    padding: 5px;
 }
