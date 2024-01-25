@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -18,25 +18,42 @@
 
 <body>
     <main>
-        <section class="secao-banner">
+        <div class="secao-banner">
+
+            <video src="../video/videoneymar.mp4" autoplay muted loop>
+            </video>
             <div class="container-info">
-                <video src="../video/videoneymar.mp4" autoplay muted loop></video>
-                <img src="../assets/imgs/neymar.jpg" alt="neymar" class="logo">
-                <h1>Neymar Jr</h1>
+                <div class="imgPerfil-titulo">
+                    <div class="imgPerfil"></div>
+                    <h1>Neymar Jr</h1>
+                </div>
+                <div class="arvore-links">
+                    <a href="https://www.youtube.com/@NeymarJrReal" target="_blank">
+                        <img src="../assets/imgs/youtube.png" alt="">
+                        <p>Siga meu canal no Youtube</p>
+                    </a>
+                    <a href="https://www.instagram.com/neymarjr/" target="_blank">
+                        <img src="../assets/imgs/instagram.png" alt="">
+                        <p>Me siga no Instagram</p>
+                    </a>
+                    <a href="https://twitter.com/neymarjr" target="_blank">
+                        <img src="../assets/imgs/twitter.png" alt="">
+                        <p>Me siga no Twitter</p>
+                    </a>
+                    <a href="https://www.facebook.com/neymarjr" target="_blank">
+                        <img src="../assets/imgs/facebook.png" alt="">
+                        <p>Me siga no Facebook</p>
+                    </a>
+                    <a href="https://www.twitch.tv/neymarjr" target="_blank">
+                        <img src="../assets/imgs/twitch.png" alt="">
+                        <p>Me siga na Twitch</p>
+                    </a>
+                </div>
             </div>
-            <div class="links">
-                <a href="" target="_blank">Siga meu canal no Youtube</a>
-                <a href="" target="_blank">Me Siga no Instagram</a>
-                <a href="" target="_blank">Me Siga no Twitter</a>
-                <a href="" target="_blank">Me Siga no Facebook</a>
-                <a href="https://www.twitch.tv/neymarjr" target="_blank">Me Siga na Twitch</a>
-            </div>
-        </section>
-        <section class="secao-estatisticas">
-            <div class="estatisticas">
-                <h2>Estatísticas</h2>
-            </div>
-            <table>
+        </div>
+        <div class="secao-tabela">
+            <h2>Estatísticas</h2>
+            <table class="tabela">
                 <thead>
                     <th>Times</th>
                     <th>Temporadas</th>
@@ -47,7 +64,21 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Santos</td>
+                        <td>
+                            <img src="../assets/imgs/cbf.png" alt="">
+                            <p>Brasil</p>
+                        </td>
+                        <td>13</td>
+                        <td>124</td>
+                        <td>77</td>
+                        <td>77</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../assets/imgs/santos.png">
+                            <p>Santos</p>
+                        </td>
                         <td>5</td>
                         <td>230</td>
                         <td>138</td>
@@ -55,7 +86,10 @@
                         <td>6</td>
                     </tr>
                     <tr>
-                        <td>Barcelona</td>
+                        <td>
+                            <img src=" ../assets/imgs/barcelona.png" alt="">
+                            <p>Barcelona</p>
+                        </td>
                         <td>4</td>
                         <td>186</td>
                         <td>105</td>
@@ -63,7 +97,10 @@
                         <td>8</td>
                     </tr>
                     <tr>
-                        <td>PSG</td>
+                        <td>
+                            <img src="../assets/imgs/psg.png" alt="">
+                            <p>PSG</p>
+                        </td>
                         <td>6</td>
                         <td>173</td>
                         <td>118</td>
@@ -71,16 +108,19 @@
                         <td>13</td>
                     </tr>
                     <tr>
-                        <td>Al-Hilal</td>
+                        <td>
+                            <img src="../assets/imgs/alhilal.png" alt="">
+                            <p>Al-Hilal</p>
+                        </td>
                         <td>1</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>0</td>
+                        <td>77</td>
                         <td>0</td>
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </div>
     </main>
 </body>
 
