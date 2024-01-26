@@ -22,6 +22,18 @@
     }
 }
 
+/* only: É utilizado quando se deseja prevenir
+ *que navegadores antigos que não suportam Media
+ *Features tentem processar a expressão.  */
+
+/* 
+and: É utilizado em todas as Media Queries, 
+tendo como função primária ser o elo entre o 
+Media Type e a Media Feature. É também responsável 
+pelas expressões múltiplas, isto é, quando usamos mais 
+de uma Media Feature para compor a expressão.
+*/
+
 /* Regra Referente a dispositivos entre 481px e 1024px de width*/
 
 @media only screen and (min-width: 480px) and (max-width:1024px) {
