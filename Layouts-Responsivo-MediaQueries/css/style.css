@@ -1,4 +1,13 @@
 /* Inicio regra comum todos os Dispositivos */
+/* 
+Sintaxe Básica para MediaQueries BASE CSS2
+
+@media [media type] {
+        estilos
+}
+
+*/
+
 .titulo {
     margin: 20px 0 80px;
     text-align: center;
@@ -42,6 +51,14 @@ de uma Media Feature para compor a expressão.
         color: #fff;
     }
 
+    /* Na logica um mediaquerie, funciona como um bloco if(caso de 2 chaves e valores)
+    Ex: Se Max-width for <= 1024 px e min-width for >= 480px {
+        return display:block;
+        se nao default display:none
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^Apenas um Exemplo
+    }
+    ; */
+
     .conteudo-dispositivo.medio {
         display: block;
     }
@@ -83,3 +100,5 @@ de uma Media Feature para compor a expressão.
     }
 
 }
+
+/* ^Regra de Conteudo para Impressão^ */
