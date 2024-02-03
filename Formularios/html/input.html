@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+
+<body>
+    <form action="https://www.devmedia.com.br/codigos/formularios/aula3/" method="post">
+        <label>Nome:</label>
+        <input type="text" name="nome">
+        <label>Data de Nascimento:</label>
+        <input type="date" name="data_nascimento">
+        <label>Seu Email:</label>
+        <input type="email" name="email">
+        <label>Telefone:</label>
+        <input type="tel" name="telefone">
+        <button type="submit">Enviar Dados</button>
+</body>
+
+</html>
+
+<!-- <input placeholder="Seu E-mail." type="email" name="email"> -->
+
+<!-- Placeholder,é um exemplo do que pode ser inserido no campo de input -->
+<!-- Podemos colocar Opções Obrigatórias nos campos com o atributo required -->
+
+<!-- Para o Input date, podemos colocar uma validação de maior idade requerida passando a data minima requerida -->
+<!-- Exemplo: <input type="date" name="data_nascimento" max="2006-01-01" required /> -->
+
+<!-- também podemos limitar o minimo de caracteres que um input pode suportar-->
+<!-- Ex: <input type="tel" name="telefone" placeholder="(XX) XXXX-XXXX" minlenght="12" required/> -->
+<!-- Ex: <input type="text" name="nome" placeholder="Digite Seu Login" minlenght="3" required/> Ja esse Exemplo Faz com que o Minimo de Caracteres no nome Seja de 3-->
+
+
+<!-- Da mesma forma que deixamos um Conteudo Minimo Requerido, também podemos limitar o Máximo de caracteres suportados com o atributo maxlenght="" -->
+<!-- Ex: <input type="password" name="senha" placeholder="Digite Sua Senha" minlenght="4" maxlenght="16" required />
+esse código faz com que o minimo de caracteres na senha seja de 4, e o máximo seja de 16 -->

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checbox</title>
+</head>
+
+<body>
+    <h1>Esportes Favoritos</h1>
+    <form action="">
+        <label>Volei</label>
+        <input type="checkbox" name="volei">
+        <label>Futebol</label>
+        <input type="checkbox" name="futebol">
+        <label>Futsal</label>
+        <input type="checkbox" name="futsal">
+        <button type="submit">Enviar Esportes</button>
+        <br>
+        <br><br><br>
+
+        <label>Li e Aceito os Termos de uso.</label>
+        <input type="checkbox" name="termos" value="aceito">
+        <button type="submit">Ok</button>
+
+        <!-- Exemplos de Checkbox são vistos em vários Sites e Aplicações web
+        um Exemplo mais claro são termos de uso-->
+        <!-- Vale Lembrar que os dados name e value, são comumente usados no banco de dados da aplicação
+        fazendo com que em devida circunstancia um dado só seja enviado para o back-end se alguma requisição for atendida -->
+        <!-- Exemplo: Se o Usuario aceitar os termos de uso e marcar o checkbox, o value da aceitação é = a true, e assim essa informação é enviada para o banco de dados. -->
+
+        <!-- também temos o atributo chamado checked, que faz com que a cada atualização, se voce ja aceitou tal condição, o checkbox ja venha marcado como true -->
+        <!-- Ex: <input type="checkbox" name="termos" value="aceito" checked/> -->
+
+
+        <!-- Também é possivel agrupar varios checkbox a uma categoria -->
+        <!-- Ex: <input type="checkbox" name="esportes[]"/> -->
+
+        <!-- 
+            IMPORTANTE 
+            O CHECKBOX NÃO SUPORTA PLACEHOLDER
+            portanto na idenfiticação de checkbox, utilizamos a tag <label>
+        -->
+
+        
+
+    </form>
+</body>
+
+</html>
