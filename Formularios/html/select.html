@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Select, Também usado como um formulário, mais usado quando se temos um código bagunçado ou cheio de input type="radio" ou "checkbox" -->
+
+    <!-- Ex -->
+
+    <h1>Selecione seu estado</h1>
+
+    <input type="radio" name="ba" id="estado-ba">
+    <label for="estado-ba">Bahia</label>
+    <input type="radio" name="rj" id="estado-rj">
+    <label for="estado-rj">RJ</label>
+    <input type="radio" name="al" id="estado-al">
+    <label for="estado-al">Alagoas</label>
+    <input type="radio" name="sp" id="estado-sp">
+    <label for="estado-sp">São Paulo</label>
+    <input type="radio" name="ma" id="estado-ma">
+    <label for="estado-ma">Maranhão</label>
+    <input type="radio" name="df" id="estado-df">
+    <label for="estado-df">Brasilia</label>
+
+    <p>Porém essa abordagem para o que está se pedindo, não é viável.</p>
+
+
+
+    <!-- Podemos tentar com um Select -->
+
+    <h2>Selecione Seu Estado</h2>
+    <select name="estados" id="estados" required>
+        <option value="">--</option>
+        <option value="estado-ba">Bahia</option>
+        <option value="estado-rj">RJ</option>
+        <option value="estado-al">Alagoas</option>
+        <option value="estado-sp">São Paulo</option>
+        <option value="estado-ma">Maranhão</option>
+        <option value="estado-df">Brasilia</option>
+    </select>
+
+    <!-- Na Abordargem acima, o html semantico é aplicado, e fica muito mais facil para leitores reconhecerem,
+também fica um código mais legivel.
+Mas, por padrão a primeira tag <option> sempre estara selecionada, podemos alterar isso
+    adicionando um option com espaco em branco -- na primeira tag option
+
+ex:
+    <option value="">--</option>
+
+-->
+
+    <!-- Porém, temos outra abordagem para quando queremos agrupar informações distintas em grupos separados dentro do select
+exemplo seria uma lista de plataformas de jogos e seus jogos, ou ate mesmo separa jogos por categoria de consoles ou plataformas, esse efeito é possivel atravez da tag <optgroup>-->
+
+
+    <h3>Selecione os Jogos</h3>
+
+    <select name="jogos[]" required size="10">
+        <!-- <option value="">--</option> -->
+        <optgroup label="Xbox">
+            <option value="halo">Halo</option>
+            <option value="gearsofwar">Gears of War</option>
+            <option value="forza">Forza Horizon</option>
+        </optgroup>
+        <!-- o Atributo size, define a quantidade de opcoes que aparece por select  size="8" ou size="3" -->
+
+        <optgroup label="Playstation">
+            <option value="crash">Crash Bandicoot</option>
+            <option value="godofwar">God of War</option>
+            <option value="gta">Gta San Andreas</option>
+        </optgroup>
+
+        <optgroup label="PC">
+            <option value="wow">World of Warcraft</option>
+            <option value="aom">Age of Mitology</option>
+            <option value="cs16">Counter Strike</option>
+        </optgroup>
+    </select>
+
+
+    <!-- Nota-se que também pode-se por varias selecões dentro de um select com o atributo multiple -->
+    <!-- Ex: <select name="jogos[]" multiple></select> -->
+
+    <!-- a tag optgroup é um grupo de opções, como ja está descrevendo -->
+</body>
+
+</html>
