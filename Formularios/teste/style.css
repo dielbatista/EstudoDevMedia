@@ -1,0 +1,30 @@
+.cadastro-dev-magalu {
+    max-width: 500px;
+    padding: 20px;
+    background-color: #0086ffde;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.dados-contato {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #fff;
+    margin: bottom 20px;
+    border-radius: 5px;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-cadastro-dev {
+    width: 150px;
+    padding: 5px 0px;
+    border: none;
+    background-color: #fff;
+    color: #0086ffde;
+    border-radius: 5px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="cadastro-dev-magalu" action="valida.php" method="post">
+        <h1>Cadastro de Dev's Magalu</h1>
+
+        <fieldset class="dados-contato">
+            <legend>Dados Pessoais</legend>
+
+            <div class="campo-formulario">
+                <label>Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Insira seu nome">
+            </div>
+
+            <div class="campo-formulario">
+                <label>Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Insira seu sobrenome">
+            </div>
+        </fieldset>
+
+        <fieldset class="dados-contato">
+            <legend>Dados de contato</legend>
+
+            <div class="campo-formulario">
+                <label>Tel:</label>
+                <input type="tel" name="tel" id="tel" placeholder="(00) 00000-0000">
+            </div>
+
+            <div class="campo-formulario">
+                <label>E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="email@email.com">
+            </div>
+        </fieldset>
+
+        <button class="btn-cadastro-dev" type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
