@@ -8,4 +8,5 @@ let discipline_colection = [
     {id: 7, name: "Fisics",     workload: 120}
 ]
 
-console.log(discipline_colection[3].name)
+console.log(discipline_colection[5].name)
+console.log(discipline_colection[5].workload)
