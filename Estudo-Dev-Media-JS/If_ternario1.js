@@ -21,7 +21,16 @@ console.log(status)
 
 let dia_semana = 5 //informa um dia para a semana
 let status_loja = //informa um status para a loja verificando se o dia da semana é sabado ou domingo
-    (dia_semana == 0 || dia_semana == 6)
-        ? "Funciomaos so ate segunda feira" //Condicao if verificando se o dia da semana é 0 ou 6
-        : "Loja Aberta" // condicao else recebendo o dia da semana atual 5
+  (dia_semana == 0 || dia_semana == 6)
+    ? "Funciomaos so ate segunda feira" //Condicao if verificando se o dia da semana é 0 ou 6
+    : "Loja Aberta" // condicao else recebendo o dia da semana atual 5
 console.log(status_loja) // imprimindo o status da loja
+
+
+let senha = "1234";
+let statusenha = senha.length >= 5 ? console.log("senha Valida") : console.log("Senha Inválida");
+
+
+let idade = 18
+
+let rsidade = (idade >= 18) ? "Maior de idade" : "Menor de idade"
