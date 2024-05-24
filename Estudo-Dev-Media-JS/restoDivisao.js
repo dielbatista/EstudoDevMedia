@@ -5,7 +5,7 @@
         Para um número ímpar, o resto da divisão por 2 é 1.
 
     A Condição if(numero % 2):
-        numero % 2 retorna 0 para números pares e 1 para números ímpares.
+        numero % 2 retorna 0W para números pares e 1 para números ímpares.
         No contexto de uma condição if, 0 é tratado como false e qualquer valor diferente de zero é tratado como true.
 
 Portanto, if(numero % 2) será false para números pares e true para números ímpares. O código atual imprime 'par' para números ímpares e 'impar' para números pares, que é o oposto do desejado.
