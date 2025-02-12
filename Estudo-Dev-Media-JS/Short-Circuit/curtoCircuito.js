@@ -19,3 +19,8 @@ Portanto, se encontrado for false, retorno permanecerá false. Se encontrado for
 let aprovado = true
 
 aprovado && console.log("Aprovado")
+
+/**
+ * curto circuito é um comportament especifico de operadores logicos
+ * em uma expressão
+ */
