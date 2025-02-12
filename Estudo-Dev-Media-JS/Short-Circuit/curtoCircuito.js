@@ -16,11 +16,12 @@ console.log(retorno)
 Portanto, se encontrado for false, retorno permanecerá false. Se encontrado for true, retorno será "Item encontrado".
  */
 
-let aprovado = true
+let aprovado = false
 
 aprovado && console.log("Aprovado")
 
+
 /**
- * curto circuito é um comportament especifico de operadores logicos
+ * curto circuito é um comportament especifico de operadores logicos (&& ||)
  * em uma expressão
  */
