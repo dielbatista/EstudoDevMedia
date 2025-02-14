@@ -1,4 +1,5 @@
-import entradaDados from "readline-sync";
+// import entradaDados from "readline-sync";
+const entradaDados = require('readline-sync')
 
 console.log(`Aplicação Juros \n`);
 
