@@ -1,0 +1,11 @@
+1- O que São estruturas de repeticao -!
+/*
+Sao Blocos de Código que podem ser executadas diversas vezes
+*/
+
+2 - Para quê são uteis? -!
+/*
+ Reaproveitar código, Evitando código duplicado
+
+ Executar um bloco de código n vezes na aplicação, mesmo sem saber quantas vezes serão.
+*/
