@@ -3,7 +3,7 @@ let alunos = [
   { id: 2, nome: "Maria", nota: 5.9 },
   { id: 3, nome: "Paulo", nota: 7 },
   { id: 4, nome: "Jacira", nota: 4 },
-  { id: 5, nome: "Ana", nota: 6.5 },
+  { id: 5, nome: "Ana", nota: 6.5 }
 ];
 
 let i = 0; 
