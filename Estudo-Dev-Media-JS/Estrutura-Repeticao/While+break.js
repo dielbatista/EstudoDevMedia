@@ -3,7 +3,7 @@ let funcionarios = [
   { id: 2, nome: "Marina", habilitado: false },
   { id: 3, nome: "Pedro", habilitado: false },
   { id: 4, nome: "Carlos", habilitado: false },
-  { id: 5, nome: "Antonio", habilitado: false },
+  { id: 5, nome: "Antonio", habilitado: false }
 ];
 
 let contador = 0;
