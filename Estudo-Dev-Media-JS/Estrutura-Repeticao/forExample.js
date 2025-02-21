@@ -8,7 +8,7 @@ let materias = [
 let soma_notas = 0;
 let quantidade_notas = materias.length;
 for (let i = 0; i < quantidade_notas; i++) {
-  soma_notas += materias[i].nota;
+  soma_notas += materias[i].nota; //equivalente a soma_notas = soma_notas + materias[i].nota
 }
 let media = soma_notas / quantidade_notas;
 
