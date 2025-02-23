@@ -9,3 +9,168 @@ Sao Blocos de Código que podem ser executadas diversas vezes
 
  Executar um bloco de código n vezes na aplicação, mesmo sem saber quantas vezes serão.
 */
+
+
+    🔹 1. for
+
+Uso: Quando você sabe quantas vezes deseja repetir.
+
+for (let i = 0; i < 5; i++) {
+  console.log(i); // Imprime de 0 a 4
+}
+
+ Como funciona?
+
+    i = 0 → Inicialização
+    i < 5 → Condição (enquanto for verdadeira, continua)
+    i++ → Incremento (soma 1 a cada repetição)
+
+    🔹 1. for com break e continue
+✅ break → Sai do loop completamente quando a condição for atendida.
+
+for (let i = 0; i < 5; i++) {
+  if (i === 3) break; // Para quando i for 3
+  console.log(i);
+}
+// Saída: 0, 1, 2
+
+✅ continue → Pula para a próxima iteração sem executar o restante do código no loop.
+
+for (let i = 0; i < 5; i++) {
+  if (i === 3) continue; // Pula o 3
+  console.log(i);
+}
+// Saída: 0, 1, 2, 4
+
+    🔹 2. while
+
+Uso: Quando você quer repetir enquanto uma condição for verdadeira.
+
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+📌 Como funciona?
+
+    Enquanto a condição for verdadeira, o loop continua.
+    Pode ser perigoso se a condição nunca for falsa (loop infinito).
+
+    2. while com break e continue
+✅ break
+
+let i = 0;
+while (i < 5) {
+  if (i === 3) break;
+  console.log(i);
+  i++;
+}
+// Saída: 0, 1, 2
+
+✅ continue
+
+let j = 0;
+while (j < 5) {
+  j++;
+  if (j === 3) continue;
+  console.log(j);
+}
+// Saída: 1, 2, 4, 5
+
+    🔹 3. do...while
+
+    Uso: Igual ao while, mas garante pelo menos uma execução.
+
+    let i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 5);
+
+📌 Como funciona?
+
+    Executa o bloco pelo menos uma vez, depois verifica a condição.
+
+    🔹 3. do...while com break e continue
+✅ break
+
+let k = 0;
+do {
+  if (k === 3) break;
+  console.log(k);
+  k++;
+} while (k < 5);
+// Saída: 0, 1, 2
+
+✅ continue
+
+let l = 0;
+do {
+  l++;
+  if (l === 3) continue;
+  console.log(l);
+} while (l < 5);
+// Saída: 1, 2, 4, 5
+
+     4. for...of
+
+Uso: Para percorrer arrays e strings.
+
+const numeros = [10, 20, 30];
+for (const numero of numeros) {
+  console.log(numero);
+}
+
+📌 Como funciona?
+
+    A cada repetição, pega um elemento do array e coloca na variável (numero).
+
+    🔹 4. for...of com break e continue
+✅ break
+
+const numeros = [10, 20, 30, 40, 50];
+for (const numero of numeros) {
+  if (numero === 30) break;
+  console.log(numero);
+}
+// Saída: 10, 20
+
+✅ continue
+
+for (const numero of numeros) {
+  if (numero === 30) continue;
+  console.log(numero);
+}
+// Saída: 10, 20, 40, 50
+
+    🔹 5. for...in
+
+Uso: Para percorrer as propriedades de um objeto.
+
+const pessoa = { nome: "Ana", idade: 25 };
+for (const chave in pessoa) {
+  console.log(`${chave}: ${pessoa[chave]}`);
+}
+
+📌 Como funciona?
+
+    A cada repetição, a variável (chave) recebe o nome de uma propriedade do objeto.
+
+    🔹 5. for...in com break e continue
+✅ break
+
+const pessoa = { nome: "Ana", idade: 25, cidade: "São Paulo" };
+for (const chave in pessoa) {
+  if (chave === "idade") break;
+  console.log(`${chave}: ${pessoa[chave]}`);
+}
+// Saída: nome: Ana
+
+✅ continue
+
+for (const chave in pessoa) {
+  if (chave === "idade") continue;
+  console.log(`${chave}: ${pessoa[chave]}`);
+}
+// Saída: nome: Ana, cidade: São Paulo

@@ -20,6 +20,6 @@ while (i < carros.length) {
   }
   i++;
 }
-if(temCarro){
+if(!temCarro){
     console.log("Infelizmente Nao encontramos um carro para voce")
 }
