@@ -1,0 +1,78 @@
+!-* Manipulação de Strings no JavaScript é o processo de modificar, 
+formatar ou analisar textos usando métodos e operadores disponíveis na linguagem. 
+Isso inclui operações como concatenação, substituição, busca, extração de partes, 
+alteração de maiúsculas e minúsculas, entre outras. *-!
+
+
+🔹 Principais Operações com Strings em JavaScript
+
+Aqui estão algumas das manipulações mais comuns:
+📌 1. Concatenar Strings
+
+Juntar duas ou mais strings:
+
+let nome = "João";
+let sobrenome = "Silva";
+let nomeCompleto = nome + " " + sobrenome; 
+console.log(nomeCompleto); // João Silva
+
+Ou usando template literals (interpolação de strings):
+
+let nomeCompleto2 = `${nome} ${sobrenome}`;
+console.log(nomeCompleto2); // João Silva
+
+📌 2. Obter o Comprimento de uma String
+
+O número de caracteres em uma string:
+
+let texto = "JavaScript";
+console.log(texto.length); // 10
+
+
+📌 3. Acessar Caracteres
+
+Cada caractere de uma string tem um índice (começa do 0).
+
+let palavra = "JavaScript";
+console.log(palavra[0]); // "J"
+console.log(palavra.charAt(4)); // "S"
+
+📌 4. Transformar Maiúsculas e Minúsculas
+
+let frase = "Olá, Mundo!";
+console.log(frase.toUpperCase()); // "OLÁ, MUNDO!"
+console.log(frase.toLowerCase()); // "olá, mundo!"
+
+📌 5. Remover Espaços em Branco
+
+let mensagem = "   JavaScript é legal!   ";
+console.log(mensagem.trim()); // "JavaScript é legal!"
+console.log(mensagem.trimStart()); // "JavaScript é legal!   "
+console.log(mensagem.trimEnd()); // "   JavaScript é legal!"
+
+📌 6. Buscar Palavras em uma String
+
+let texto = "Aprendendo JavaScript!";
+console.log(texto.includes("JavaScript")); // true
+console.log(texto.indexOf("JavaScript")); // 11
+console.log(texto.startsWith("Aprendendo")); // true
+console.log(texto.endsWith("!")); // true
+
+📌 7. Substituir Texto
+
+let frase = "Eu adoro JavaScript!";
+console.log(frase.replace("JavaScript", "Python")); // "Eu adoro Python!"
+
+📌 8. Dividir Strings
+
+Criar um array a partir de uma string:
+
+let lista = "maçã, banana, uva";
+console.log(lista.split(", ")); // ["maçã", "banana", "uva"]
+
+📌 9. Extrair Parte de uma String
+
+let frase = "Programação é incrível!";
+console.log(frase.slice(0, 11)); // "Programação"
+console.log(frase.substring(0, 11)); // "Programação"
+console.log(frase.substr(0, 11)); // "Programação" (menos usado)
