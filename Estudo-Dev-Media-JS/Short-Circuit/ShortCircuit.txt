@@ -1,0 +1,66 @@
+⚡ O que é Curto-Circuito em JavaScript?
+
+O Curto-Circuito acontece quando utilizamos operadores lógicos como && (E) e || (OU). Nesses casos, o JavaScript pode parar de avaliar a expressão mais cedo se já encontrar um resultado suficiente para determinar a resposta.
+
+Esses operadores não apenas retornam true ou false, mas também podem retornar os próprios valores envolvidos na expressão.
+🟢 Operador && (E) – Curto-Circuito
+
+O operador && retorna o primeiro valor falso encontrado. Se todos os valores forem verdadeiros, retorna o último valor.
+
+Regras:
+
+    Se o primeiro valor for falso, ele retorna esse valor imediatamente (curto-circuito).
+    Se todos os valores forem verdadeiros, retorna o último.
+
+Exemplos:
+
+console.log(false && "Olá");      // Saída: false (para no primeiro falso)
+console.log("Oi" && 0);           // Saída: 0 (para no primeiro falso)
+console.log("Oi" && 42);          // Saída: 42 (todos verdadeiros, retorna o último)
+console.log("Oi" && true && "Ok"); // Saída: "Ok" (todos verdadeiros, retorna o último)
+
+🔴 Operador || (OU) – Curto-Circuito
+
+O operador || retorna o primeiro valor verdadeiro encontrado. Se todos forem falsos, retorna o último valor.
+
+Regras:
+
+    Se o primeiro valor for verdadeiro, retorna esse valor imediatamente (curto-circuito).
+    Se todos os valores forem falsos, retorna o último.
+
+Exemplos:
+
+console.log(true || "Olá");       // Saída: true (para no primeiro verdadeiro)
+console.log(false || "Oi");       // Saída: "Oi" (procura o primeiro verdadeiro)
+console.log(0 || null || "Ok");   // Saída: "Ok" (primeiro verdadeiro encontrado)
+console.log(false || 0 || null);  // Saída: null (todos falsos, retorna o último)
+
+🛠️ Uso Prático do Curto-Circuito:
+1. Valores padrão (fallback):
+
+Você pode usar || para definir valores padrão caso uma variável seja null, undefined ou falsy.
+
+Exemplo:
+
+let nome = "";
+let nomeExibicao = nome || "Visitante";
+console.log(nomeExibicao);  // Saída: "Visitante"
+
+2. Execução condicional com &&:
+
+Pode usar && para executar uma função ou código somente se uma condição for verdadeira.
+
+Exemplo:
+
+let usuarioLogado = true;
+usuarioLogado && console.log("Bem-vindo!");  // Executa apenas se for verdadeiro
+
+🔍 Valores Falsy e Truthy:
+
+    Falsy: false, 0, "" (string vazia), null, undefined, NaN.
+    Truthy: Todos os demais valores (inclusive strings não vazias, arrays vazios, etc.).
+
+📋 Resumo Rápido:
+
+    && (E): Retorna o primeiro falso ou, se todos forem verdadeiros, o último valor.
+    || (OU): Retorna o primeiro verdadeiro ou, se todos forem falsos, o último valor.
