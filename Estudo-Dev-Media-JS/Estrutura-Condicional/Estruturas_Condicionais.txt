@@ -1,0 +1,126 @@
+Principais Estruturas Condicionais:
+1. if (se)
+
+Usado para executar um bloco de código apenas se uma condição for verdadeira.
+
+Sintaxe:
+
+if (condicao) {
+    // Código a ser executado se a condição for verdadeira
+}
+
+Exemplo:
+
+let idade = 18;
+
+if (idade >= 18) {
+    console.log("Você é maior de idade.");
+}
+
+Saída:
+
+Você é maior de idade.
+
+2. if...else (se...senão)
+
+Permite executar um bloco de código se a condição for verdadeira e outro bloco se for falsa.
+
+Sintaxe:
+
+if (condicao) {
+    // Código se a condição for verdadeira
+} else {
+    // Código se a condição for falsa
+}
+
+Exemplo:
+
+let temperatura = 30;
+
+if (temperatura > 25) {
+    console.log("Está calor!");
+} else {
+    console.log("Está fresco!");
+}
+
+Saída:
+
+Está calor!
+
+3. if...else if...else
+
+Usado quando você precisa testar múltiplas condições diferentes.
+
+Sintaxe:
+
+if (condicao1) {
+    // Código se condicao1 for verdadeira
+} else if (condicao2) {
+    // Código se condicao2 for verdadeira
+} else {
+    // Código se nenhuma das condições anteriores for verdadeira
+}
+
+Exemplo:
+
+let nota = 85;
+
+if (nota >= 90) {
+    console.log("Aprovado com excelência!");
+} else if (nota >= 60) {
+    console.log("Aprovado.");
+} else {
+    console.log("Reprovado.");
+}
+
+Saída:
+
+Aprovado.
+
+4. switch (escolha)
+
+Útil para testar uma variável contra múltiplos valores específicos, funcionando como uma alternativa para vários if...else if.
+
+Sintaxe:
+
+switch (expressao) {
+    case valor1:
+        // Código se expressao === valor1
+        break;
+    case valor2:
+        // Código se expressao === valor2
+        break;
+    default:
+        // Código se nenhum valor corresponder
+}
+
+Exemplo:
+
+let dia = 3;
+
+switch (dia) {
+    case 1:
+        console.log("Domingo");
+        break;
+    case 2:
+        console.log("Segunda-feira");
+        break;
+    case 3:
+        console.log("Terça-feira");
+        break;
+    default:
+        console.log("Dia inválido");
+}
+
+Saída:
+
+Terça-feira
+
+Por que usar break?
+O break interrompe a execução do switch. Sem ele, o código continuaria executando os próximos casos.
+Resumo:
+
+    if: Executa um bloco se a condição for verdadeira.
+    if...else: Escolhe entre dois blocos com base em uma condição.
+    if...else if...else: Permite testar múltiplas condições.
+    switch: Ideal para comparar uma variável contra múltiplos valores fixos.

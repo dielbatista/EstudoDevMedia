@@ -1,0 +1,122 @@
+🟦 O que são Objetos em JavaScript?
+
+Um objeto é uma estrutura que permite armazenar dados na forma de pares chave-valor. Eles são ideais para representar entidades do mundo real, como um usuário, produto, carro, etc.
+
+Sintaxe básica:
+
+let pessoa = {
+    chave: valor,
+    nome: "Ana",
+    idade: 25,
+    profissao: "Engenheira"
+};
+
+🛠️ Criando Objetos:
+1. Literalmente (mais comum):
+
+let carro = {
+    marca: "Toyota",
+    modelo: "Corolla",
+    ano: 2020,
+    ligado: false,
+    ligar: function() {
+        this.ligado = true;  // `this` refere-se ao próprio objeto
+    }
+};
+
+2. Usando new Object():
+
+let livro = new Object();
+livro.titulo = "1984";
+livro.autor = "George Orwell";
+livro.ano = 1949;
+
+🔍 Acessando Valores:
+1. Notação de ponto: (objeto.propriedade)
+
+console.log(carro.marca);   // Saída: Toyota
+
+2. Notação de colchetes: (objeto["propriedade"])
+
+    Útil para acessar propriedades com nomes dinâmicos ou com espaços.
+
+console.log(carro["modelo"]);  // Saída: Corolla
+
+🔄 Atualizando Valores:
+
+carro.ano = 2022;
+carro["marca"] = "Honda";
+
+➕ Adicionando Propriedades:
+
+carro.cor = "Preto";
+carro["preco"] = 80000;
+
+❌ Removendo Propriedades:
+
+delete carro.preco;
+
+🔄 Percorrendo Objetos:
+1. for...in – Percorre as chaves:
+
+for (let chave in carro) {
+    console.log(chave + ": " + carro[chave]);
+}
+
+Saída:
+
+marca: Honda
+modelo: Corolla
+ano: 2022
+ligado: false
+cor: Preto
+
+🛠️ Métodos em Objetos:
+
+Um método é uma função associada a um objeto.
+
+Exemplo:
+
+let calculadora = {
+    somar: function(a, b) {
+        return a + b;
+    },
+    subtrair(a, b) {  // Sintaxe simplificada
+        return a - b;
+    }
+};
+
+console.log(calculadora.somar(5, 3));      // Saída: 8
+console.log(calculadora.subtrair(10, 4));  // Saída: 6
+
+🔄 Copiar Objetos:
+1. Com Object.assign():
+
+let carroCopia = Object.assign({}, carro);
+
+2. Com Spread Operator {...}:
+
+let carroCopia2 = {...carro};
+
+🔍 this em Objetos:
+
+O this referencia o próprio objeto dentro de métodos.
+
+Exemplo:
+
+let pessoa = {
+    nome: "Carlos",
+    apresentar() {
+        console.log(`Olá, meu nome é ${this.nome}`);
+    }
+};
+
+pessoa.apresentar();  // Saída: Olá, meu nome é Carlos
+
+📋 Resumo:
+
+    Criar: { chave: valor } ou new Object().
+    Acessar: objeto.propriedade ou objeto["propriedade"].
+    Métodos: Funções dentro de objetos.
+    Copiar: Object.assign() ou {...objeto}.
+    this: Referencia o próprio objeto.
