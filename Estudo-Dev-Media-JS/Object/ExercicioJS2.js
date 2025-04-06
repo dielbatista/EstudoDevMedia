@@ -26,10 +26,10 @@ const aluno = {
 }
 
 
-if (media_geral >= 7.5 && media_geral <= 10) {
+if (media_geral >= 8 && media_geral <= 10) {
     console.log(`Parabéns ${aluno.nome}, Voce foi APROVADO!, sua media foi ${media_geral.toFixed(1)}`)
 }
-else if (media_geral >= 7 && media_geral <= 7.4) {
+else if (media_geral >= 7.5 && media_geral <= 7.9) {
     console.log(`Atenção ${aluno.nome}, Voce ficou de RECUPERACAO, sua media foi ${media_geral.toFixed(1)}`)
 }
 else {
