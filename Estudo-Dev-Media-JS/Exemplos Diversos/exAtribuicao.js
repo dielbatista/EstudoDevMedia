@@ -3,6 +3,7 @@ var n2 = 15
 
 n1 += n2
 console.log(n1 >= n2)
+console.log(n1 <= n2)
 
 /**
  * no Exemplo acima faz-se uma comparação se n1 é > que n2 após a atribuição feita na linha4
